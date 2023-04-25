@@ -1,0 +1,8 @@
+# docs
+_build/
+
+# deps
+poetry.lock
+
+# misc
+__pycache__/

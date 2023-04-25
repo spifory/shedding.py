@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "shedding.py"
+version = "1.0.0"
+description = "An API wrapper for EskomSePush."
+authors = ["toolifelesstocode <luvuyosilubane50@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "shedding/**/*.py"}]
+repository = "https://github.com/toolifelesstocode/shedding.py"
+keywords = ["eskom", "load shedding", "eskomsepush"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: aiohttp",
+    "Framework :: AsyncIO",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.8.4"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.10.4"
+ruff = "^0.0.262"
+black = "^23.3.0"
+pyright = "^1.1.304"
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^6.1.3"
+furo = "^2023.3.27"
+sphinx-autobuild = "^2021.3.14"
+sphinx-hoverxref = "^1.3.0"
+
+[tool.ruff]
+select = ["F", "E", "I", "ANN", "Q", "TID", "ARG"]
+ignore = ["ANN101", "ANN102"]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F403"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
