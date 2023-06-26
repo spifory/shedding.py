@@ -8,7 +8,7 @@ build:
     post_install:
       - pip install poetry==1.4.2
       - poetry config virtualenvs.create false
-      - poetry install --only=docs
+      - poetry install --with=docs
 
 sphinx:
   fail_on_warning: false
