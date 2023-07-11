@@ -6,7 +6,7 @@ RequestReAllocationType = Literal["daily"] # really not sure about this name
 
 class Allowance(TypedDict):
     """Type annotations for the 
-    `/api_allowance </https://documenter.getpostman.com/view/1296288/UzQuNk3E#10647b8e-c839-4d56-82a2-d9a406ae4f18>`_ route
+    `/api_allowance <https://documenter.getpostman.com/view/1296288/UzQuNk3E#10647b8e-c839-4d56-82a2-d9a406ae4f18>`_ route
     
     Parameters
     ----------
